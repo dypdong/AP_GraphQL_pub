@@ -1,0 +1,6 @@
+//PROCLIB  JCLLIB ORDER=CICSTS.V5R5.CICS.SDFHPROC      
+//APPLPROG EXEC DFHZITCL,PROGLIB=CICS.CICSTSXX.LOAD      
+//COBOL.SYSIN  DD DISP=SHR,DSN=CICSTS.CICSXX.COB(FCBOOK) 
+//LKED.SYSIN DD *                                      
+   NAME FCBOOK(R)                                        
+/*                                                     
