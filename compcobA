@@ -19,7 +19,7 @@
 //SYSUT5   DD UNIT=SYSDA,SPACE=(CYL,(1,1))                              
 //SYSUT6   DD UNIT=SYSDA,SPACE=(CYL,(1,1))                              
 //SYSUT7   DD UNIT=SYSDA,SPACE=(CYL,(1,1))                              
-//SYSIN    DD DISP=SHR,DSN=DYPDONG.GRAPHQL.SOURCE(WTBOOK)               
+//SYSIN    DD DISP=SHR,DSN=CICSTS.CICSXX.COB(FCBOOK)                    
 //COPYLINK EXEC PGM=IEBGENER,COND=(7,LT,COBOL)                          
 //SYSUT1   DD *                                                         
 /*                                                                      
@@ -39,7 +39,7 @@
 //SYSLIN   DD DSN=&&COPYLINK,DISP=(OLD,DELETE)                          
 //         DD DSN=&&LOADSET,DISP=(OLD,DELETE)                           
 //         DD DDNAME=SYSIN                                              
-//SYSLMOD  DD DISP=SHR,DSN=DYPDONG.GRAPHQL.P1LIB                        
+//SYSLMOD  DD DISP=SHR,DSN=CICSTS.CICSXX.LOAD                           
 //SYSIN  DD *                                                           
-    NAME WTBO3K(R)                                                      
+    NAME FCBO1K(R)                                                      
 /*                                                                      
