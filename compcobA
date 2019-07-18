@@ -29,7 +29,7 @@
 //SYSPRINT DD SYSOUT=*                                        
 //SYSIN    DD DUMMY                                           
 //LKED   EXEC PGM=IEWL,REGION=4M,                             
-//          PARM=(XREF,LIST,LET,RENT,'AMODE(31)','RMODE(ANY)')
+//          PARM=(XREF,LIST,LET,RENT,'AMODE(31)','RMODE(ANY)'),
 //          COND=(7,LT,COBOL)                                 
 //SYSLIB   DD DISP=SHR,DSN=CICSTS.V5R4.CICS.SDFHLOAD          
 //         DD DSN=CEE.SCEELKED,DISP=SHR                       
