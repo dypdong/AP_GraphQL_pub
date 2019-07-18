@@ -41,5 +41,5 @@
 //         DD DDNAME=SYSIN                                              
 //SYSLMOD  DD DISP=SHR,DSN=CICSTS.CICSXX.LOAD                           
 //SYSIN  DD *                                                           
-    NAME FCBO1K(R)                                                      
+    NAME FCBOOK(R)                                                      
 /*                                                                      
