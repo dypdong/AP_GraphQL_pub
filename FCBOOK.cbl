@@ -9,7 +9,7 @@
          01 BOOK-DATA.
             03 BOOK-ID    PIC X(8).
             03 BOOK-NAME  PIC X(56).
-            03 PAGECOUNT  S9(8) COMP.
+            03 PAGECOUNT  PIC S9(8) COMP. 
             03 AUTHR-ID   PIC X(10).
             03 RESSERVE   PIC X(2).
        PROCEDURE DIVISION.
