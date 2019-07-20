@@ -33,7 +33,6 @@ public class Book {
 	}
 	
 	public Map<String, Object> getBook(String bookId){
-		//System.out.println(bookId);
 		if(isCICS){
 			try {
 				task = Task.getTask();
@@ -42,10 +41,7 @@ public class Book {
 				} else {
 					Channel bookChannel = task.createChannel("QUARY-BOOK");
 					Container bdc = bookChannel.createContainer("QUARY-BOOKDATA");
-					bdc.putString(bookId);//"book-01   "
-					//TODO:??
-					//Channel currentChannel = task.getChannel("QUARY-BOOK");
-					//Container bdcj = currentChannel.getContainer("QUARY-BOOKDATA");
+					bdc.putString(bookId);//like "book-01   "
 					
 					// link to cobol program FCBOOK with channel QUARY-BOOK, container QUARY-BOOKDATA
 					Program QuaryBook = new Program();
