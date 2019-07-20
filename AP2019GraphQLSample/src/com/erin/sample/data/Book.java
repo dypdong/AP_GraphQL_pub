@@ -51,11 +51,14 @@ public class Book {
 					
 					Channel currentCobolChannel = task.getChannel("QUARY-BOOK");
 					Container bdco = currentCobolChannel.getContainer("QUARY-BOOKDATA");
+					//For GraphQL hands on DevOps 
+					// I had changed the source code to make it different with before. 
+					// bookData.getBookName() = "2019_" + bookData.getBookName()
 					if (bdco != null)
 					{	
 						bookData = new BookData(bdco.get());
 						return  ImmutableMap.of("id", bookData.getBookId(),
-			                    "name", bookData.getBookName(),
+			                    "name", "2019_"+bookData.getBookName(),
 			                    "pageCount", bookData.getPagecount(),
 			                    "authorId", bookData.getAuthrId());
 					}
