@@ -51,7 +51,7 @@ public class Book {
 					
 					Channel currentCobolChannel = task.getChannel("QUARY-BOOK");
 					Container bdco = currentCobolChannel.getContainer("QUARY-BOOKDATA");
-					//For GraphQL hands on DevOps 
+					//For GraphQL DevOps hands on  
 					// I had changed the source code to make it different with before. 
 					// bookData.getBookName() = "2019_" + bookData.getBookName()
 					if (bdco != null)
