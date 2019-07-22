@@ -58,7 +58,7 @@ public class Book {
 					{	
 						bookData = new BookData(bdco.get());
 						return  ImmutableMap.of("id", bookData.getBookId(),
-			                    "name", "AP_"+bookData.getBookName(),
+			                    "name", "APtest_"+bookData.getBookName(),
 			                    "pageCount", bookData.getPagecount(),
 			                    "authorId", bookData.getAuthrId());
 					}
